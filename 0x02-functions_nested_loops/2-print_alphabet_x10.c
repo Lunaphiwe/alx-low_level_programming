@@ -12,7 +12,7 @@ void print_alphabet_10x(void)
 
 	while (i <= 9)
 	{
-	for (c ='a'; c <= 'z'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
 	_putchar(c);
 	}
