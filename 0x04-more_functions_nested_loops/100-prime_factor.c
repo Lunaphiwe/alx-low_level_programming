@@ -8,23 +8,23 @@
 
 int main(void)
 {
-	long int i, n, d;
+	long prime = 612852475143, divisor;
 
-	n = 612852475143;
-	for (i = 1; i <= n; i++)
+	while (divisor < (prime / 2))
 	{
-		if (n % i == 0)
+		if ((prime % 2) == 0)
 		{
-			if (n == i)
-			{
-				printf("%1d\n" i);
-				break;
+			prime /= 2;
+			continue;
+		}
 
-			}
-			d = n / i;
-			n = d;
+		for (divisor = 3; divisor < (prime / 2); divisor += 2)
+		{
+			if ((prime % divisior) == 0)
+				prime /= divisor;
 		}
 	}
+	printf("%1d\n", prime);
+
 	return (0);
 }
-
