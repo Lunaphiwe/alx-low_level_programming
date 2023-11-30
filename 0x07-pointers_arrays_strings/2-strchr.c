@@ -2,8 +2,6 @@
 
 /**
  * _strchr _ Entry point
- * Description: Locating a character in a string.
- *
  * @s: input
  * @c: input
  * Return: Always 0 (Success)
